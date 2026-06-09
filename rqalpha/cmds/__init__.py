@@ -17,5 +17,6 @@ from . import bundle
 from . import mod
 from . import run
 from . import misc
+from . import web
 from .entry import cli
 from .run import inject_run_param

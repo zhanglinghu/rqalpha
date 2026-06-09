@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "strategyName": "双均线示例策略",
+    "startDate": "2024-01-02",
+    "endDate": "2024-03-29",
+    "initialCash": 100000,
+    "benchmarkName": "沪深 300",
+    "dataSourceLabel": "RQAlpha 示例导出 JSON",
+    "generatedAt": "2026-06-09 15:36"
+  },
+  "kpis": {
+    "totalReturnPct": 12.84,
+    "annualizedReturnPct": 21.37,
+    "maxDrawdownPct": -6.42,
+    "winRatePct": 58.33,
+    "sharpe": 1.46
+  },
+  "series": [
+    { "date": "01-02", "strategy": 1.00, "benchmark": 1.00 },
+    { "date": "01-09", "strategy": 1.02, "benchmark": 1.01 },
+    { "date": "01-16", "strategy": 1.01, "benchmark": 1.00 },
+    { "date": "01-23", "strategy": 1.04, "benchmark": 1.02 },
+    { "date": "01-30", "strategy": 1.06, "benchmark": 1.03 },
+    { "date": "02-06", "strategy": 1.08, "benchmark": 1.05 },
+    { "date": "02-20", "strategy": 1.07, "benchmark": 1.04 },
+    { "date": "02-27", "strategy": 1.10, "benchmark": 1.06 },
+    { "date": "03-05", "strategy": 1.12, "benchmark": 1.07 },
+    { "date": "03-12", "strategy": 1.09, "benchmark": 1.05 },
+    { "date": "03-19", "strategy": 1.11, "benchmark": 1.06 },
+    { "date": "03-29", "strategy": 1.13, "benchmark": 1.08 }
+  ],
+  "trades": [
+    {
+      "date": "2024-01-08",
+      "symbol": "000001.XSHE",
+      "side": "买入",
+      "quantity": 1200,
+      "price": 10.82,
+      "note": "短均线上穿长均线，建立初始仓位"
+    },
+    {
+      "date": "2024-01-25",
+      "symbol": "000001.XSHE",
+      "side": "加仓",
+      "quantity": 800,
+      "price": 11.36,
+      "note": "趋势继续抬升，信号确认后加仓"
+    },
+    {
+      "date": "2024-02-22",
+      "symbol": "000001.XSHE",
+      "side": "减仓",
+      "quantity": 600,
+      "price": 11.02,
+      "note": "价格回踩，按规则降低暴露"
+    },
+    {
+      "date": "2024-03-06",
+      "symbol": "000001.XSHE",
+      "side": "买入",
+      "quantity": 500,
+      "price": 11.58,
+      "note": "重新站上均线，恢复部分仓位"
+    },
+    {
+      "date": "2024-03-25",
+      "symbol": "000001.XSHE",
+      "side": "卖出",
+      "quantity": 700,
+      "price": 12.14,
+      "note": "接近阶段目标，兑现部分利润"
+    }
+  ]
+}
